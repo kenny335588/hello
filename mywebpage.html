@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset='utf-8'>
+        <title>my web page</title>
+        <link rel="shortcut icon" href="http://icons.iconarchive.com/icons/matthew-kelleigh/mac-town-vol2/16/Tree-1-icon.png">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+        <style type=text/css>
+            body{text-align:center; font-size: 20px; font-family:Microsoft JhengHei}
+            #topbar {background-color: #006400; color: #D94DFF; padding: 15px; margin: 5px }
+        </style>
+    </head>
+    
+    <body>
+        <div id="topbar"><span style="font-family: DFKai-sb ;font-size: 38px"><b>歡迎來到我的網頁!</b></div>
+        <div style="cursor: progress">大家好~我是施旻岳！</div>
+        歡迎來我的臉書看看哦~~</br>
+        <a href="https://www.facebook.com/profile.php?id=100000286166658" type="button" class="btn btn-lg btn-primary" target="_blank">Facebook</a></br>
+        我的生日：1997.03.04</br>
+        信箱：kenny335588@gmail.com</br>
+        <div class="alert alert-info" role="alert">
+        <canvas id="myCanvas" width="300" height="300"></canvas>
+        </div>
+        <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        var centerX = canvas.width / 2;
+        var centerY = canvas.height / 2;
+        var radius = 100;
+
+        context.beginPath();
+        context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+        context.fillStyle = 'yellow';
+        context.fill();
+        context.lineWidth = 10;
+        context.strokeStyle = '#003300';
+        context.stroke();
+        </script>
+    
+        <footer>
+            <p font-size: 12px>me 2016</p>
+        </footer>
+    </body>
+</html>
